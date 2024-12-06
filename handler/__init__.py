@@ -47,6 +47,9 @@ class YunhuHandler:
         if self.commandName == "色图":
             tag = None
             keyword = None
+            # czwmnr = 单选
+            # dshcpo = 输入栏
+            # 二次使用请根据用户后台表单id修改对应
             search_type = self.content.get('czwmnr', {}).get('selectValue', None)
             if search_type == "标签":
                 tag = self.content.get('dshcpo', {}).get('value', None)
